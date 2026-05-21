@@ -56,11 +56,41 @@ nav a{
     padding: 14px 30px;
     border-radius: 50px;
     font-weight: 500;
-    box-shadow: 0 10px 20px rgba(217, 137, 168, 0.3);   
+    transition: 0.5s;  
 }
 
 /*hover menu*/
 nav a:hover{
-    box-shadow: 0 12px 25px rgba(217, 137, 168, 0.4);
-    
+    transform:scale(1.03);
+    box-shadow: 0 0 60px #ff00aa; 
+
 }
+
+/*seccion*/
+section{
+    width: 88%;
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 35px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba (0,0,0,0.8);
+}
+
+/*titulo*/
+section h2{
+    font-family: playfair display, serif;
+    font-size: 55px;
+    text-align: center;
+    color: #8b4c69;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/*linea decoradora*/
+section h2: after{
+
+
+}
+
+
+
