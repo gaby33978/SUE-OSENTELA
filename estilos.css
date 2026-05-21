@@ -1,0 +1,66 @@
+/*sueños en tela*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins, sans-serif;
+    background: linear-gradient(to bottom, #fff8f9, #ffeef3);
+    color: #6d4357;
+    overflow-x: hidden;
+}
+
+/*header*/
+header{
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/*titulo*/
+h1{
+    font-family: serif;
+    font-size: 55px;
+    color: #8b4c69;
+    margin-bottom: 10px;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/*frase*/
+.principal{
+    font-size: 20px;
+    color: #c06c8d;
+    margin-bottom: 20px;
+}
+
+/*menu*/
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/*botones*/
+nav a{
+    text-decoration: none; 
+    background: linear-gradient(135deg, #d989a8, #c06c8d);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    box-shadow: 0 10px 20px rgba(217, 137, 168, 0.3);   
+}
+
+/*hover menu*/
+nav a:hover{
+    box-shadow: 0 12px 25px rgba(217, 137, 168, 0.4);
+    
+}
