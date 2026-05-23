@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 body{
@@ -22,6 +22,9 @@ header{
     text-align: center;
     padding: 25px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*titulo*/
@@ -87,10 +90,81 @@ section h2{
 }
 
 /*linea decoradora*/
-section h2: after{
-
-
+section h2::after{
+    content: "";
+    width: 120px;
+    height: 4px;
+    background: #d989a8;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
 }
+
+/*subtitulos*/
+section h3{
+    text-align: center;
+    font-size: 30px;
+    color: #c06c8d;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/*texto*/
+section p{
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+    color: #7d6a73;
+    margin-bottom: 25px;
+}
+
+/*imagenes*/
+img{
+    width: 300px;
+    max-width:90%;
+    display:block;
+    margin:25px auto;
+    border-radius:25px;
+    transition:0.5s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/*efecto*/
+img:hover{
+    transform: scale(1.03);
+}
+
+/*imagen principal*/
+#inicio img{
+    max-width:500px;
+    border-radius:40px;
+    animation:flotar 4s ease-in-out infinite;
+}
+
+/*listas*/
+ul{
+    list-style: none;
+    padding:0;
+    text-align:justify;
+    color:#6d4357;
+}
+
+ul li{
+    background: #fff4f7;
+    margin: 12px auto;
+    padding: 15px;
+    max-width:450px;
+    border-radius: 18px;
+    transition: 0.3s;
+    bos-shadow: 0 5px 15px rgba(0,0,0,0.04);
+}
+
+ul li:hover{
+    transform: translateX(5px);
+    background: #ffe5ee;
+}
+
+
 
 
 
