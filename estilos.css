@@ -164,7 +164,52 @@ ul li:hover{
     background: #ffe5ee;
 }
 
+/*Brillo de las imagenes*/
+img:hover{
+    box-shadow: 0 0 20px #ff00aa;
+    transform: scale(1.05);
+}
 
+/*agradecimiento*/
+.agradecimientoo{
+    font-family:Arial;
+    background: linear-gradient(to bottom, #fff8f9, #ffeef3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
 
+.caja-agradecimiento{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    width:400px;
+}
 
+.titulo-agradecimiento{
+    color: #c06c8d;
+    margin-bottom:20px;
+}
 
+.mensaje-agradecimiento{
+
+    color:#333;
+    margin-bottom:30px;
+}
+
+.boton-enviar{
+    background:#c06c8d;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:12px;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.boton-enviar:hover{
+    background:#333;
+    transform:scale(1.03);
+}
