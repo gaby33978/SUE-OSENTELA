@@ -7,12 +7,13 @@
 
 body{
     font-family: poppins, sans-serif;
+    /*difuminar el fondo*/
     background: linear-gradient(to bottom, #fff8f9, #ffeef3);
     color: #6d4357;
     overflow-x: hidden;
 }
 
-/*header*/
+/*encabezado*/
 header{
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(10px);
@@ -148,7 +149,7 @@ ul{
     text-align:justify;
     color:#6d4357;
 }
-
+/*elementos de la lista*/
 ul li{
     background: #fff4f7;
     margin: 12px auto;
@@ -156,9 +157,9 @@ ul li{
     max-width:450px;
     border-radius: 18px;
     transition: 0.3s;
-    bos-shadow: 0 5px 15px rgba(0,0,0,0.04);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.04);
 }
-
+/*efecto cuando pse el mouse por encima de los elementos de la lista*/
 ul li:hover{
     transform: translateX(5px);
     background: #ffe5ee;
@@ -169,6 +170,29 @@ img:hover{
     box-shadow: 0 0 20px #ff00aa;
     transform: scale(1.05);
 }
+
+/*formulario*/
+form{
+    padding: 50px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(109, 15, 15, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #f2f2f2;
+    font-size: 16px;
+}
+
 
 /*agradecimiento*/
 .agradecimientoo{
@@ -208,7 +232,7 @@ img:hover{
     display:inline-block;
     transition:0.3s;
 }
-
+/*efecto cuando pse el mouse por encima de los elementos de la lista*/
 .boton-enviar:hover{
     background:#333;
     transform:scale(1.03);
