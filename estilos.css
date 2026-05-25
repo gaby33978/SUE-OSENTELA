@@ -237,3 +237,18 @@ textarea{
     background:#333;
     transform:scale(1.03);
 }
+/*volver al inicio*/
+a{
+    background:#c06c8d;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+  
+}
+/*brillo de volver al inicio*/
+a:hover{
+    box-shadow: 0 0 20px #ff1493;
+}
+
+
