@@ -1,170 +1,455 @@
-/*sueños en tela*/
+/*TODO EL SITIO*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
+/*BODY*/
 body{
-    font-family: poppins, sans-serif;
-    background: linear-gradient(to bottom, #fff8f9, #ffeef3);
-    color: #6d4357;
-    overflow-x: hidden;
-}
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(179, 11, 109, 0.75),
+        rgba(216, 41, 123, 0.75)),
+    url("img/Logo 1.jpeg");
 
-/*header*/
-header{
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-size: cover;
     text-align: center;
-    padding: 25px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-attachment: fixed;
 }
 
-/*titulo*/
+/*HEADER*/
+header{
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.80);
+    position:sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+}
+
+/*TITULO*/
 h1{
-    font-family: serif;
-    font-size: 55px;
-    color: #8b4c69;
-    margin-bottom: 10px;
-    text-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-family: playfair display, serif;
+    font-size: 70px;
+    text-align: center;
+    color: #f77ae6;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
 }
 
-/*frase*/
+/*FRASE*/
 .principal{
-    font-size: 20px;
-    color: #c06c8d;
-    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ce4e81;
+    margin-bottom: 25px;
+    font-style:normal;
 }
 
-/*menu*/
+/*MENU*/
 nav{
     display: flex;
     justify-content: center;
-    gap: 15px;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
-/*botones*/
+/*BOTONES MENU*/
 nav a{
-    text-decoration: none; 
-    background: linear-gradient(135deg, #d989a8, #c06c8d);
+    text-decoration: none;
     color: white;
-    padding: 14px 30px;
-    border-radius: 50px;
+    background: #ff7ca8;
+    padding: 12px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
     font-weight: 500;
-    transition: 0.5s;  
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-/*hover menu*/
+/*EFECTO MENU*/
 nav a:hover{
-    transform:scale(1.03);
-    box-shadow: 0 0 60px #ff00aa; 
-
+    background: white;
+    color: #ff4f87;
+    transform: scale(1.08);
+    box-shadow: 0 0 60px #fd11ae;
 }
 
-/*seccion*/
-section{
-    width: 88%;
-    margin: 60px auto;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 35px;
-    padding: 50px;
-    box-shadow: 0 10px 30px rgba (0,0,0,0.8);
-}
-
-/*titulo*/
-section h2{
-    font-family: playfair display, serif;
-    font-size: 55px;
-    text-align: center;
-    color: #8b4c69;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-/*linea decoradora*/
-section h2::after{
-    content: "";
-    width: 120px;
-    height: 4px;
-    background: #d989a8;
+/*IMAGEN LOGO*/
+body img{
+    width: 220px;
     display: block;
-    margin: 15px auto;
-    border-radius: 10px;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
 }
 
-/*subtitulos*/
-section h3{
+/*SECCIONES*/
+section{
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.12);
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/*TITULOS*/
+h2{
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    font-size: 30px;
-    color: #c06c8d;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    color: #ffd6e7;
+    margin-bottom: 20px;
+    position:relative;
 }
 
-/*texto*/
-section p{
-    font-size: 18px;
-    line-height: 1.9;
-    text-align: justify;
-    color: #7d6a73;
-    margin-bottom: 25px;
+h3{
+    color: #ffbdd2;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align:center;
 }
 
-/*imagenes*/
-img{
-    width: 300px;
-    max-width:90%;
-    display:block;
-    margin:25px auto;
-    border-radius:25px;
-    transition:0.5s;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+/*PARRAFOS*/
+p{
+    line-height: 1.8;
+    font-size: 17px;
+    text-align: center;
+    color: #f1d2e9;
 }
 
-/*efecto*/
-img:hover{
-    transform: scale(1.03);
-}
-
-/*imagen principal*/
-#inicio img{
-    max-width:500px;
-    border-radius:40px;
-    animation:flotar 4s ease-in-out infinite;
-}
-
-/*listas*/
+/*LISTAS*/
 ul{
-    list-style: none;
-    padding:0;
-    text-align:justify;
-    color:#6d4357;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    color:#e4cfe7;
+    text-align: center;
 }
 
 ul li{
-    background: #fff4f7;
-    margin: 12px auto;
-    padding: 15px;
-    max-width:450px;
-    border-radius: 18px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    text-align: center;
+}
+
+/*GENERALES*/
+a{
+    text-align: center;
+    color: #ffd6e7;
+    text-decoration: none;
     transition: 0.3s;
-    bos-shadow: 0 5px 15px rgba(0,0,0,0.04);
 }
 
-ul li:hover{
-    transform: translateX(5px);
-    background: #ffe5ee;
+a:hover{
+    color: white;
 }
 
+/*BOTON VOLVER*/
+body a{
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background: #ff7ca8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
 
+body a:hover{
+    background: white;
+    color: #ff4f87;
+}
 
+/*GALERIAS*/
+.Otros{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+/*IMAGENES*/
+.Otros img,
+div img{
+    width: 260px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/*EFECTO IMAGEN*/
+.Otros img:hover,
+div img:hover{
+    transform: scale(1.06);
+}
+
+/*PARA QUE ESTEN EN UNA SOLA LINEA*/
+div{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+/*FORMULARIO*/
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* TIPO DE VESTIDO */
+select{
+    width: 320px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+/* TEXTO TIPO */
+label{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #ff7d7a;
+}
+
+/*TITULO DECORACIONES*/
+.titulo-decoraciones{
+    text-align: center;
+    color: #ffd6e7;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+/*CONTENEDOR*/
+.decoraciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/*LABELS*/
+.decoraciones label{
+    display: flex;
+    align-items: center;
+    justify-content: justify;
+    gap: 10px;
+    width: 200px;
+    padding: 15px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+/*EFECTO*/
+.decoraciones label:hover{
+    transform: scale(1.03);
+    background: rgba(255,255,255,0.2);
+}
+
+/*CHECKBOX*/
+.decoraciones input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+    accent-color: #ff69b4;
+    cursor: pointer;
+}
+
+/* COLOR VESTIDO */
+.color-vestido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* TEXTO COLOR */
+.color-vestido label{
+    font-size: 24px;
+    color: #ff7d7a;
+    margin-bottom: 12px;
+}
+
+/* SELECT */
+.color-vestido select{
+    width: 320px;
+    text-align: center;
+}
+
+/* INPUTS */
+input,
+select,
+textarea{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* TEXTAREA */
+textarea{
+    text-align:center;
+    min-height: 20px;
+    resize: none;
+}
+
+/* BOTON */
+button{
+    background: #ff7ca8;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+/* EFECTO BOTON */
+button:hover{
+    background: white;
+    color: #ff4f87;
+    transform: scale(1.03);
+}
+
+/*Fondo oscuro que se pone detrás*/
+.fondo-oculto {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* negro transparente */
+    z-index: 998;
+}
+
+/* El cuadro del mensaje en el centro */
+.cuadro-oculto {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*color rosado claro*/
+    background-color: #f8e6ee; 
+
+    /*borde rosado más fuerte*/
+    border: 2px solid #b86b8c;
+    padding: 25px 40px;
+
+    /*esquinas redondas*/
+    border-radius: 12px;
+
+    /*sombrita*/
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 18px;
+
+    /*letra color vino/rosado oscuro*/
+    color: #70294a;
+    font-weight: bold;
+    text-align: center;
+    z-index: 999;
+}
+
+/*Estilo del botón de Cerrar*/
+.cuadro-oculto button {
+    /*mismo color del borde*/
+    background-color: #b86b8c;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cuadro-oculto button:hover {
+    /*se oscurece un poco al pasar el mouse*/
+    background-color: #9a4e70; 
+}
+
+/*CONTACTO IMAGEN*/
+#contacto img{
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+/*GRACIAS*/
+.gracias{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #f7d27a;
+    font-weight: bold;
+}
+
+/* CALIFICACION */
+.evaluacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+/* OCULTAR INPUT */
+.evaluacion input{
+    display: none;
+}
+
+/* ESTRELLAS */
+.evaluacion label{
+    font-size: 50px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ICONO */
+.evaluacion label::before{
+    content: "★";
+}
+
+/* HOVER */
+.evaluacion label:hover,
+.evaluacion label:hover ~ label{
+    color: gold;
+}
+
+/* SELECCIONADAS */
+.evaluacion input:checked ~ label{
+    color: gold;
+}
 
 
