@@ -54,9 +54,9 @@ h1{
 /*MENU*/
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
 }
 
 /*BOTONES MENU*/
@@ -452,5 +452,84 @@ button:hover{
     color: gold;
 }
 
+/* IMÁGENES RESPONSIVAS */
+img{
+    max-width: 100%;
+    height: auto;
+}
 
+/* CONTENEDORES */
+.container,
+.contenedor,
+.content{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
 
+/* CELULARES */
+@media (max-width: 768px){
+    .botones{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero{
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .cards,
+    .galeria,
+    .servicios{
+        grid-template-columns: 1fr;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+
+/* TABLETS */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .cards,
+    .galeria,
+    .servicios{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+}
