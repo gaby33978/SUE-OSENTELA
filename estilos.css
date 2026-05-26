@@ -67,7 +67,7 @@ nav a{
     background: #ff7ca8;
     color: white;
     width: 200px;
-    padding: 12px 0;
+    padding: 12px;
     border-radius: 50px;
     font-weight: 500;
     transition: 0.5s;  
